@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  /* background-color: #191717; */
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  padding-top: 10%;
+}
+
+.form{
+  height: 30vmin;
+  width: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF6969; 
+  border-radius: 12px;
+  color: #000;
+}
+.data{
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.data input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: 20px/1 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 370px;
+  background-color: #ddd;
+  border: none;
+  padding: 10px 11px 11px 11px;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  margin: 0 10px;
+  box-sizing: border-box; 
+}
+
+.data button{
+  padding:0.5em;
+  border:0.16em solid #3085C3;
+  margin:0.2em 0.4em;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 12px;
+  background-color: #3085C3;
+}
+
+.data button:hover{
+  color:#DDDDDD;
+  border-color:#DDDDDD;
+}
+
+.variables{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  
+}
+.variables label{
+  color: #fff;
+}
+
+
+@media all and (max-width:30em){
+  .form{
+    height: 70vh;
+    width: 80%;
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+  }
+  .data input{
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  .data button{
+    margin-bottom: 20px;
+  }
+
+  .variables{
+    display: flex;
+    flex-direction: column;
+  }
+  .variables input{
+    margin-bottom: 2px;
+  }  
+  .variables label{
+    margin-bottom: 20px;
+  }  
+}
+
+
+

@@ -1,0 +1,148 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #6F38C5;
+  overflow-x: none;
+}
+
+.main{
+  width: 100%;
+  padding-top: 5%;  
+  height: 94%;
+}
+
+.display{
+  width: 45vw;
+  margin: auto;
+  background-color: #F45050;
+  padding: 3vmin;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.display h2{
+  margin-bottom: 10px;
+  font-size: 5vmin;
+}
+
+.inputValues{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+  margin-bottom: 5%;
+}
+
+.inputValues input{
+  width: 80%;
+  font-size: 3.3vmin;
+  padding: 1vmin 2vmin;
+  font-weight: 600;
+  height: 7vmin;
+  color: #000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.inputValues input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.inputValues button{
+  width: 20%;
+  font-size: 3.3vmin;
+  padding: 1vmin;
+  background-color: #5272F2;
+  color: #fff;
+  height: 7vmin;
+  border: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+.inputValues button:hover{
+  background-color: #22A39F;
+}
+
+.tasks{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 3%;
+  font-size: 2.8vmin;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 8px;
+  transition: 0.3s ease-in-out;
+  text-align: left;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: #00ABB3;
+}
+.tasktext{
+  cursor: pointer;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: 90%;
+  position: relative;
+  /* border: 2px solid red;
+  padding-left: 18px; */
+}
+.checked{
+  text-decoration: line-through;
+}
+
+.tasktext img{
+  width: 15px;
+  /* border: 2px solid red; */
+  display: inline;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+#remove{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.tasks:hover{
+  border-radius: 12px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#remove:hover{
+  transform: scale(1.1);
+}
+
+#btn{
+  width: 30%;
+  font-size: 3vmin;
+  padding: 1.8vmin;
+  background-color: #5272F2;
+  color: #fff;
+  height: 8.5vmin;
+  border: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+}
+#btn:hover{
+  background-color: #22A39F;
+}
+
+@media screen and (max-width: 600px) {
+  .display{
+      width: 70%;
+  }
+  .tasktext img{
+    margin-bottom: 2px;
+  }
+}
